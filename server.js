@@ -6,6 +6,8 @@
 'use strict';
 
 const express = require('express');
+import { JS_OUTPUT } from './utils-javascript'
+import { TS_OUTPUT } from './utils-typescript'
 
 // Constants
 const PORT = 3000;
@@ -14,11 +16,11 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
-	res.send('Hello Javascript!\n');
+	res.send(JS_OUTPUT);
 });
 
 app.get('/tsc', (req, res) => {
-	res.send('Hello Typescript!\n');
+	res.send(TS_OUTPUT);
 });
 
 app.listen(PORT, HOST);
