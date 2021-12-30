@@ -14,7 +14,11 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
-	res.send('Hello TSC!\n');
+	res.send('Hello Javascript!\n');
+});
+
+app.get('/tsc', (req, res) => {
+	res.send('Hello Typescript!\n');
 });
 
 app.listen(PORT, HOST);
