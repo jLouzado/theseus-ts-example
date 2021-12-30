@@ -9,11 +9,11 @@
 		"eqeqeq":"warn",
 		"no-cond-assign": 0,
 		"no-unused-vars": 1,
-		"no-extra-semi": "warn",
-		"semi": "warn"
+		"no-extra-semi": "warn"
 	},
 	"extends": "eslint:recommended",
 	"parserOptions": {
+		"sourceType": "module",
 		"ecmaFeatures": {
 			"experimentalObjectRestSpread": true
 		}
