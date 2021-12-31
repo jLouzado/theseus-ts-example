@@ -121,7 +121,14 @@ module.exports = {
         moreThanOneDependencyType: true
       }
     },
-
+    {
+      name: "no-unsafe-import",
+      comment: "Bringing a unit defined in JS into a TS file weakens the type-safety of the TS part."
+        + "The reverse operation (importing TS into JS) does not weaken type safety so it's allowed",
+      from: { path: "[^/]+\.ts$" },
+      to: { path: "[^/]+\.js$" },
+      severity: 'error'
+    },
     /* rules you might want to tweak for your specific situation: */
     {
       name: 'not-to-spec',
