@@ -17,6 +17,8 @@ yarn lint:deps
 
 Try making changes to `utils-javascript.js` and `utils-typescript.ts`, try importing them back and forth and see what kinds of things you can try in each "space".
 
+If you just want to see an example of what a failed build looks like you can check the [example-import-violation](https://github.com/jLouzado/theseus-ts-example/runs/4682962040?check_suite_focus=true) branch
+
 ## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
