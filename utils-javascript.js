@@ -1,3 +1,6 @@
+/**
+ * @deprecated use "today_NEW" from utils_typescript instead
+ */
 export const today = () => {
     return new Date
 }

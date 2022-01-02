@@ -1,4 +1,6 @@
-import { today } from './utils-javascript'
+export const today_NEW = () => {
+    return new Date
+}
 
 export const UNSAFE_today = () => {
     const day = new Date
@@ -7,6 +9,6 @@ export const UNSAFE_today = () => {
 
 const maybeToday = UNSAFE_today()
 
-export const TS_OUTPUT = `Hello TS, the date is ${ maybeToday ? 
-    maybeToday.toDateString() : today().toDateString()
+export const TS_OUTPUT = `Hello T   S, the date is ${ maybeToday ? 
+    maybeToday.toDateString() : today_NEW().toDateString()
 }`
